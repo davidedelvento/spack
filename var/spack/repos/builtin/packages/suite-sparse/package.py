@@ -23,6 +23,7 @@ class SuiteSparse(Package):
     # these fail with hundreds of libcholmod.so.5.2.0: undefined reference to xxxx when builing
     # the various cholmod_yyy_demo's or creating the static archive
     version("7.3.1", sha256="b512484396a80750acf3082adc1807ba0aabb103c2e09be5691f46f14d0a9718")
+    version("7.2.1", sha256="304e959a163ff74f8f4055dade3e0b5498d9aa3b1c483633bb400620f521509f")
     version("5.13.0", sha256="59c6ca2959623f0c69226cf9afb9a018d12a37fab3a8869db5f6d7f83b6b147d")
     version("5.12.0", sha256="5fb0064a3398111976f30c5908a8c0b40df44c6dd8f0cc4bfa7b9e45d8c647de")
     version("5.11.0", sha256="fdd957ed06019465f7de73ce931afaf5d40e96e14ae57d91f60868b8c123c4c8")
