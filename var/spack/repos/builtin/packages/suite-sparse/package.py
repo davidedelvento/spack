@@ -236,7 +236,6 @@ class SuiteSparse(Package):
             make_args += [
                 "CMAKE_OPTIONS=-DCMAKE_INSTALL_PREFIX=%s" % prefix
                 + " -DCMAKE_LIBRARY_PATH=%s" % prefix.lib
-                + " -DBLA_VENDOR=OpenBLAS"
                 + " -DBLAS_INCLUDE_DIRS=%s" % (spec["blas"].prefix.include)  # for >= v7.4.0
                 + " -DLAPACK_INCLUDE_DIRS=%s" % (spec["lapack"].prefix.include)  # for >= v7.4.0
                 + " -DBLAS_LIBRARIES=%s" % (spec["blas"].prefix.include)  # for <= v7.3.1
