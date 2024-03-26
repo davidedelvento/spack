@@ -236,10 +236,8 @@ class SuiteSparse(Package):
             make_args += [
                 "CMAKE_OPTIONS=-DCMAKE_INSTALL_PREFIX=%s" % prefix
                 + " -DCMAKE_LIBRARY_PATH=%s" % prefix.lib
-                + " -DBLAS_INCLUDE_DIRS=%s" % (spec["blas"].prefix.include)  # for >= v7.4.0
-                + " -DLAPACK_INCLUDE_DIRS=%s" % (spec["lapack"].prefix.include)  # for >= v7.4.0
-                + " -DBLAS_LIBRARIES=%s" % (spec["blas"].prefix.include)  # for <= v7.3.1
-                + " -DLAPACK_LIBRARIES=%s" % (spec["lapack"].prefix.include)  # for <= v7.3.1
+                + " -DBLAS_INCLUDE_DIRS=%s" % (spec["blas"].prefix.include)
+                + " -DLAPACK_INCLUDE_DIRS=%s" % (spec["lapack"].prefix.include)
             ]
 
         if spec.satisfies("%gcc platform=darwin"):
